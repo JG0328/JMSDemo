@@ -91,7 +91,6 @@
     var dataLength = 20;
     var updateChart = function (dataPoints) {
         var dp = JSON.parse(dataPoints);
-        console.log(dp);
         tempDataPoints.push({
             label: dp.date,
             y: dp.temperature
