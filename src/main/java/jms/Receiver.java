@@ -25,8 +25,6 @@ public class Receiver {
         topic = session.createTopic(topicName);
         consumer = session.createConsumer(topic);
 
-        System.out.println("...");
-
         consumer.setMessageListener(message -> {
             TextMessage textMessage = (TextMessage) message;
             try {
