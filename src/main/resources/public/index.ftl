@@ -113,7 +113,6 @@
     function socketConnect() {
         webSocket = new WebSocket("ws://" + location.hostname + ":" + location.port + "/sensor_read");
         webSocket.onmessage = function (x) {
-            console.log("I am making a connection");
             updateChart(x.data);
         };
     }
